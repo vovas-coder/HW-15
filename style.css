@@ -1,49 +1,47 @@
 .holder {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
-  gap: 0;
-  width: 360px;
-  height: 220px;
-  border-radius: 24px 24px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 20px;
   overflow: hidden;
-  background: #f0f0f0;
+  outline: 3px solid black;
 }
 
 .item {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font: 700 24px system-ui;
-  color: #fff;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+  height: 100px;
 }
 
 .item:nth-child(1) {
-  background: #e53935;
-  grid-column: 1 / span 3;
-  grid-row: 1;
+  flex-basis: 50%;
+  order: 1;
+  background-color: red;
 }
 
 .item:nth-child(5) {
-  background: #fb8c00;
-  grid-column: 4 / span 3;
-  grid-row: 1;
+  flex-basis: 50%;
+  order: 2;
+  background-color: orange;
 }
 
 .item:nth-child(3) {
-  background: #8e24aa;
-  grid-column: 1 / span 2;
-  grid-row: 2;
+  flex-basis: 33.33%;
+  order: 3;
+  background-color: blueviolet;
 }
 
 .item:nth-child(2) {
-  background: #1e88e5;
-  grid-column: 3 / span 2;
-  grid-row: 2;
+  flex-basis: 33.33%;
+  order: 4;
+  background-color: blue;
 }
 
 .item:nth-child(4) {
-  background: #43a047;
-  grid-column: 5 / span 2;
-  grid-row: 2;
+  flex-basis: 33.33%;
+  order: 5;
+  background-color: green;
 }
